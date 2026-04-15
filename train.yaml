@@ -1,0 +1,8 @@
+train: dataset/images/train
+val: dataset/images/val
+
+nc: 3
+names:
+  - vehicle
+  - pedestrian
+  - tree
