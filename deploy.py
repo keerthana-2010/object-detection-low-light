@@ -6,12 +6,18 @@ import random
 import os
 import time
 
-# Class labels and colors
-class_names = {0: 'vehicles', 1: 'pedestrians', 2: 'trees'}
-class_colors = {
-    0: (0, 255, 0),    # Green
-    1: (255, 0, 0),    # Blue
-    2: (0, 0, 255)     # Red
+# Class labels (Pascal VOC / detection classes)
+CLASS_NAMES = {
+    0: "vehicle",
+    1: "pedestrian",
+    2: "tree"
+}
+
+# BGR colors for visualization (OpenCV format)
+CLASS_COLORS = {
+    0: (255, 0, 0),   # vehicle → blue
+    1: (0, 255, 0),   # pedestrian → green
+    2: (0, 128, 255)  # tree → orange
 }
 
 frame = None  # global camera frame
